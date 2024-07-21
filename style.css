@@ -1,0 +1,95 @@
+.welcome_card{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-style: italic;
+    font:bold;
+    font-stretch: semi-expanded;
+    font-size: 4rem;
+    display:flex;
+    color:black;
+    justify-content: center;
+    align-items:center;
+    margin: 0 auto;
+    height:100px;
+    background: rgba(255, 255, 255, 0.5); /* Slight white background with transparency */
+    backdrop-filter: blur(5px); /* Blur effect */
+    width: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+body{
+    background-image: url("back.jpg");
+}
+.main{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+    height: auto;
+    background: rgba(255, 255, 255, 0.5); /* Slight white background with transparency */
+    backdrop-filter: blur(5px); /* Blur effect */
+    width: auto;
+    max-width: 600px;
+    min-width: 400px;
+    border-radius:10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#keys{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 16px;
+    column-gap: 50px;
+    padding: 25px;
+}
+button{
+    width: auto;
+    font-size: 2.5rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+button:hover{
+    animation-name: enlarge;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+    animation-duration: 2s;
+    transition: 1s ease;
+    background-color:hsl(218, 96%, 59%);
+    color:antiquewhite
+}
+button:active{
+    background-color:hsl(255, 75%, 99%);
+}
+@keyframes enlarge{
+    50%{
+        scale: 1.2;
+    }
+    100%{
+        border-radius: 100px;
+    }
+}
+.correct{
+    background-color: rgb(25, 184, 67);
+}
+.correct:hover{
+    background-color:hsl(98, 65%, 53%);
+}
+.wrong{
+    background-color: rgb(241, 22, 22);
+}
+.wrong:hover{
+    background-color:hsl(0, 84%, 53%);
+}
