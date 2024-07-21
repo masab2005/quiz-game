@@ -52,13 +52,13 @@ function handleOptionClick(event) {
         selectedOption.textContent = "Correct 👌";
         selectedOption.classList.add("correct");
         removelistner();
-      let intervalid = setTimeout(changeQ,1000);
+      let intervalid = setTimeout(changeQ,3000);
     } else {
         wrong++;
         selectedOption.textContent = "Wrong 👎";
         selectedOption.classList.add("wrong");
         removelistner();
-        let intervalid = setTimeout(changeQ,1000);
+        let intervalid = setTimeout(changeQ,3000);
     }
 }
 
